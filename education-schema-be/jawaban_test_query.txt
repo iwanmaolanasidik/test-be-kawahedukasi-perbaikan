@@ -1,0 +1,5 @@
+1. SELECT nama, gaji FROM kawahedukasi WHERE gaji = (SELECT MAX(gaji) FROM kawahedukasi); 
+2. SELECT nama, MAX(gaji), MAX(nilai) FROM kawahedukasi WHERE kelas = 'BACKEND' GROUP BY nama LIMIT 1; 
+3. SELECT COUNT(kelas) FROM `kawahedukasi` where kelas = 'FRONTEND';
+4. SELECT nama, MAX(jumlah_kehadiran), MAX(nilai) FROM kawahedukasi WHERE kelas = 'FRONTEND' GROUP BY nama LIMIT 1; 
+
